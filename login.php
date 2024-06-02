@@ -33,35 +33,42 @@ if(isset($_POST['masuk'])){
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" href="login.css">
     <title>Form Login</title>
 </head>
 <body>
 <div class="container">
-
-    <!-- Alert ERROR -->
-    <?php 
-        if(isset($_SESSION['error']) && $_SESSION['error']!= '' ){?>
-        <div class="alert alert-danger" role="alert">
-            <?= $_SESSION['error']?>
-        </div>
-    <?php 
-    }
-    $_SESSION['error'] = ''; 
-    ?>
-    <!-- END Alert ERROR -->
-    
-    <h1>Login</h1>
-    <form method="post" action="">
-        <div class="form-group">
-            <label for="exampleInputEmail">Username</label>
-            <input type="text" class="form-control" name="username" placeholder="Masukkan Username Anda">
-        </div>
-        <div class="form-group">
-            <label for="exampleInputPassword">Password</label>
-            <input type="password" class="form-control" name="psswd" placeholder="Masukkan Password Anda">
-        </div>
-        <input type="submit" name="masuk" value="Login" class="btn btn-primary">
+    <div class="left">
+        <img src="kasir.png" alt="Logo"> <!-- Add your logo image here -->
+        <h2>Kasir</h2>
+    </div>
+    <div class="right">
+        <!-- Alert ERROR -->
+        <?php 
+            if(isset($_SESSION['error']) && $_SESSION['error']!= '' ){?>
+            <div class="alert alert-danger" role="alert">
+                <?= $_SESSION['error']?>
+            </div>
+        <?php 
+        }
+        $_SESSION['error'] = ''; 
+        ?>
+        <!-- END Alert ERROR -->
+        
+        <h1>Login</h1>
+        <form method="post" action="">
+            <div class="form-group">
+                <label for="exampleInputEmail">Username</label>
+                <input type="text" class="form-control" name="username" placeholder="Masukkan Username Anda">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword">Password</label>
+                <input type="password" class="form-control" name="psswd" placeholder="Masukkan Password Anda">
+            </div>
+            <p>Belum Memiliki Akun?<a href="register.php">Register</a></p>
+            <input type="submit" name="masuk" value="Login" class="btn btn-primary">
+        </form>
+    </div>
 </div>
-</form>
 </body>
 </html>

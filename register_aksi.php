@@ -20,5 +20,5 @@ if (isset($_POST['simpan'])) {
     //var_dump($view);
     $_SESSION['succes'] = 'Berhasil Menambahkan Data!';
     //mengalihkan ke halaman list user
-    header("location:user.php");
+    header("location:viewBarang.php");
 }
