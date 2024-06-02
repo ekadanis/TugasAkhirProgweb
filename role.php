@@ -38,7 +38,7 @@ $view = pg_query($connection,$sql);
         ?>
 
         <h1>List Role</h1><br>
-        <a href="Role_add.php" class="btn btn-primary">Tambah Data</a><br><br><br>
+        <a href="Role_add.php" class="btn btn-primary">Tambah Data</a>   <a href="index.php" class="btn btn-warning ">Kembali</a> <br><br><br>
         <table class="table table-bordered">
             <tr>
                 <th>ID Role</th>

@@ -41,7 +41,7 @@ else if(isset($_SESSION['delete']) && $_SESSION['delete'] != '') {
 ?>
 
     <h1>List User</h1><br>
-    <a href="user_add.php" class="btn btn-primary">Tambah Data</a><br><br><br>
+    <a href="user_add.php" class="btn btn-primary">Tambah Data</a>   <a href="index.php" class="btn btn-warning ">Kembali</a> <br><br><br>
     <table class="table table-bordered">
         <tr>
             <th>ID User</th>

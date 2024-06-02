@@ -38,14 +38,23 @@ $user = pg_fetch_assoc($user);
         body {
             color: black;
         }
+
+        p {
+            text-align: center;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
     </style>
     <div align="center">
         <table width="500" border="0" cellpadding="1" cellspacing="0">
             <tr>
                 <th>
                     <h2>Caffein</h2><br>
-                    Jalan Raya ITS, Keputih-Sukolilo, Surabaya 60111<br>
-                    No. Telp 0895405983136
+                    <p><b>Jalan Raya ITS, Keputih-Sukolilo, Surabaya 60111<br>
+                    No. Telp 0895405983136</b></p>
                 </th>
             </tr>
             <tr>
@@ -92,14 +101,14 @@ $user = pg_fetch_assoc($user);
                 </td>
             </tr>
             <tr>
-                <th>Terimakasih, sehat-sehat orang baik</th>
+                <br><br><p><b>Terimakasih, sehat-sehat orang baik</b></p>
             </tr>
             <tr>
-                <th>====== Selamat Menenangkan Hati dan Pikiran =====</th>
+                <p><b>====== Selamat Menenangkan Hati dan Pikiran =====</b></p>
             </tr>
         </table><br><br>
-        <button onclick="window.print()" class="btn btn-primary">Print this page</button>
-        <button class="btn btn-primary"><a href="cart_reset.php">Selesai</a></button>
+        <button onclick="window.print()" class="btn btn-primary">Print Struk</button>
+        <button class="btn btn-success"><a href="cart_reset.php">Selesai</a></button>
     </div>
 </body>
 

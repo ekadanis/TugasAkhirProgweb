@@ -1,4 +1,6 @@
 <?php 
+include 'connection.php';
+session_start();
 include 'authcheck.php';
 ?>
 
